@@ -1,0 +1,106 @@
+<html>
+<head>
+    <style>
+        #website_header {
+            background-color: #2B4362;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            /* justify-content: space-evenly;
+            align-items: flex-end; */
+        }
+        .text_in_header {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        #dropDownBtn {
+            background-color: #2B4362;
+            border: none;
+        }
+        .dropdownContent {
+            display: none;
+            position: absolute;
+            flex-direction: column;
+
+        }
+        .dropdown {
+            position: relative;
+            justify-content: right;
+
+        }
+
+        .dropdownContent a {
+            display: block;
+            
+        }
+
+        .dropdownContent a:hover {
+            background-color: red;
+        }
+        .dropdown:hover .dropdownContent {
+            display: block;
+        }
+
+        #links {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        #search_bar {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="website_header">
+        
+        <img width="30%" height="200px" src="https://antra.com/wp-content/uploads/2023/03/Antra-black.png">
+
+        <div style="width: 70%;">
+            <div id="search_bar">
+                <div class="search_thing">
+                    <input type="text" placeholder="Search for">
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+            <div id="links">
+                <a class="text_in_header" href="https://www.google.com">
+                    NEWS
+                </a>
+                <div class="dropdown">
+                    <button id="dropDownBtn" class="text_in_header">ABOUT THE UNIVERSITY</button>
+                    <div class="dropdownContent">
+                        <a href="">University 1</a>
+                        <a href="">University 2</a>
+                        <a href="">University 3</a>
+                    </div>
+                </div>
+                
+                <a class="text_in_header" href="https://www.google.com">
+                    TRAINING COURSES
+                </a>
+                <a class="text_in_header" href="https://www.google.com">
+                    FOR COMPANIES
+                </a>
+                <a class="text_in_header" href="https://www.google.com">
+                    FORUM
+                </a>
+                <a class="text_in_header" href="https://www.google.com">
+                    CONTACTS
+                </a>
+            </div>
+
+        </div>
+        
+        
+    </div>
+</body>
+</html>
